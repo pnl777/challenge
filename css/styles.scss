@@ -363,3 +363,43 @@ nav {
     right: 0;
   }
 }
+
+// Verma Benefits
+#benefits-block {
+  display: block;
+  background: #fefaf8;
+  .grid-blk {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    div {
+      position: relative;
+    }
+    img {
+      border-radius: 20px;
+      width: 100%;
+      box-shadow: 0 3px 20px 0 rgba(37, 36, 36, 0.1);
+    }
+    .paragraph-blk {
+      background: #fff;
+      text-align: center;
+      position: absolute;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      width: 100%;
+      padding: 20px;
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #benefits-block {
+    .main-container-blk {
+      width: 100%;
+    }
+    width: 100%;
+    .grid-blk {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

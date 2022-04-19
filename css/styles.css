@@ -402,4 +402,50 @@ nav ul li:last-child img {
     right: 0;
   }
 }
+
+#benefits-block {
+  display: block;
+  background: #fefaf8;
+}
+
+#benefits-block .grid-blk {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#benefits-block .grid-blk div {
+  position: relative;
+}
+
+#benefits-block .grid-blk img {
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(37, 36, 36, 0.1);
+          box-shadow: 0 3px 20px 0 rgba(37, 36, 36, 0.1);
+}
+
+#benefits-block .grid-blk .paragraph-blk {
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+}
+
+@media (max-width: 600px) {
+  #benefits-block {
+    width: 100%;
+  }
+  #benefits-block .main-container-blk {
+    width: 100%;
+  }
+  #benefits-block .grid-blk {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
