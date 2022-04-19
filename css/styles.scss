@@ -27,6 +27,9 @@ $bold_font: "Tisa Sans Pro Extra Bold";
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   font-family: $regular_font;
@@ -76,6 +79,33 @@ li {
     background: #ff6e39;
     transform: translate(0px, -10px);
     box-shadow: 0 22px 21px 0 rgb(235, 200, 175);
+  }
+}
+
+.grid-blk {
+  display: grid;
+  align-items: center;
+}
+
+.headline-blk {
+  text-align: center;
+  h1 {
+    font-family: $bold_font;
+    color: #443636;
+    display: block;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #a7836d;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-container-blk {
+    width: 100%;
+    padding: 0 20px;
   }
 }
 
@@ -172,7 +202,7 @@ nav {
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 850px;
-  position: absolute;
+  position: fixed;
 
   z-index: 9999;
   i {
@@ -368,6 +398,7 @@ nav {
 #benefits-block {
   display: block;
   background: #fefaf8;
+
   .grid-blk {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -400,6 +431,203 @@ nav {
     width: 100%;
     .grid-blk {
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+// About CBD
+#about-blk {
+  display: block;
+  margin-top: -100px;
+  .headline-blk {
+    img {
+      width: 50px;
+    }
+  }
+  .grid-blk {
+    grid-template-columns: repeat(3, 1fr);
+    .slide-container-blk {
+      img {
+        width: 100%;
+      }
+    }
+    div {
+      img {
+        width: 80px;
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+      .grid-cols {
+        margin-bottom: 80px;
+      }
+      h1 {
+        font-size: 20px;
+        text-align: center;
+        color: #443636;
+      }
+      .header-line-blk {
+        display: block;
+        width: 200px;
+        height: 2px;
+        background: #f6914e;
+        margin: 10px auto;
+      }
+      p {
+        text-align: center;
+        color: #a7836d;
+      }
+    }
+  }
+  .cta-btn-about {
+    background: #3c562c;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 11px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 220px;
+    letter-spacing: 2px;
+    margin: 0px auto;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+      background: rgb(102, 184, 14);
+    }
+  }
+}
+.waves-about {
+  margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+  #about-blk {
+    margin-top: 0px;
+    .grid-blk {
+      grid-template-columns: repeat(1, 1fr);
+      div:first-child,
+      div:last-child {
+        display: none;
+      }
+      div:nth-child(2) {
+        img {
+          width: 80%;
+        }
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .waves-about {
+    margin-top: 0px;
+  }
+}
+
+// Footer
+footer {
+  background: #3c562c;
+  #footer-header-blk {
+    background: #edd3c1;
+    padding: 20px 0px;
+    .back-to-top-blk {
+      background: none;
+      border: 1px solid #787878;
+      padding: 10px 30px;
+      border-radius: 5px;
+      color: #787878;
+      letter-spacing: 2px;
+      font-size: 10px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: #3c562c;
+        color: #fff;
+      }
+    }
+    .grid-blk {
+      grid-template-columns: repeat(3, 1fr);
+      div:last-child {
+        text-align: right;
+      }
+    }
+    img {
+      width: 80px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      font-family: $bold_font;
+      color: #443636;
+      font-size: 30px;
+    }
+  }
+  #footnote-blk {
+    img {
+      margin: 30px auto;
+      display: block;
+      width: 250px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      text-align: center;
+      a {
+        color: #fff;
+        font-size: 14px;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: #ffcf00;
+        }
+      }
+    }
+
+    padding: 20px 0px 0px 0px;
+  }
+  .f-blk {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    li:last-child {
+      margin-right: 0px;
+    }
+    a {
+      font-size: 11px;
+      color: rgb(122, 122, 122);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #footer-header-blk {
+    .grid-blk {
+      grid-template-columns: repeat(2, 1fr) !important;
+      div:first-child {
+        display: none;
+      }
+    }
+    div:nth-child(2) {
+      margin-right: auto;
+    }
+  }
+  #footnote-blk {
+    .grid-blk {
+      ul {
+        display: block;
+        li {
+          padding: 15px;
+        }
+      }
+    }
+  }
+  .f-blk {
+    width: 100% !important;
+    ul li {
+      display: block;
+      margin: 0px;
+      padding: 5px;
     }
   }
 }

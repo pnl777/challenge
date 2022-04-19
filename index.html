@@ -119,18 +119,143 @@
         </div>
       </div>
     </div>
+    <lottie-player
+      src=" https://assets10.lottiefiles.com/packages/lf20_uku8vrur.json"
+      background="transparent"
+      speed="1"
+      style="width: 100%; transform: rotate(180deg)"
+      loop
+      autoplay
+    ></lottie-player>
+
+    <!--- About CBD -->
+    <div id="about-blk">
+      <div class="main-container-blk">
+        <div class="headline-blk">
+          <img src="./img/round-logo-orange.png" />
+          <h1>About Our CBD</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing<br />
+            elit. Nullam rhoncus auctor arcu, nec mollis tortor.
+          </p>
+        </div>
+        <div class="grid-blk">
+          <div>
+            <div class="grid-cols">
+              <img src="./img/ingredients-icon.png" />
+              <h1>High Quality Ingredients</h1>
+              <div class="header-line-blk"></div>
+              <p>
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit. Nullam<br />
+                rhoncus auctor arcu, nec mollis tortor.<br />
+                Mauris enim enim, tristique ac pulvinar<br />
+                eget, lacinia sed turpis.
+              </p>
+            </div>
+            <div class="grid-cols">
+              <img src="./img/benefit-icon.png" />
+              <h1>xyz Benefit</h1>
+              <div class="header-line-blk"></div>
+              <p>
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit. Nullam<br />
+                rhoncus auctor arcu, nec mollis tortor.<br />
+                Mauris enim enim, tristique ac pulvinar<br />
+                eget, lacinia sed turpis.
+              </p>
+            </div>
+          </div>
+          <div class="slide-container-blk">
+            <img src="img/white-bowl.png" />
+          </div>
+          <div>
+            <div class="grid-cols">
+              <img src="./img/thc-icon.png" />
+              <h1>THC</h1>
+              <div class="header-line-blk"></div>
+              <p>
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit. Nullam<br />
+                rhoncus auctor arcu, nec mollis tortor.<br />
+                Mauris enim enim, tristique ac pulvinar<br />
+                eget, lacinia sed turpis.
+              </p>
+            </div>
+            <div class="grid-cols">
+              <img src="./img/plants-icon.png" />
+              <h1>From Plants… to Gummies</h1>
+              <div class="header-line-blk"></div>
+              <p>
+                Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit. Nullam<br />
+                rhoncus auctor arcu, nec mollis tortor.<br />
+                Mauris enim enim, tristique ac pulvinar<br />
+                eget, lacinia sed turpis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="cta-btn-about" href="#">MORE ABOUT CBD</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer-header-blk">
+        <div class="main-container-blk grid-blk">
+          <div>
+            <a class="back-to-top-blk" href="#">BACK TO TOP</a>
+          </div>
+          <div>
+            <img src="./img/round-footer-logo.png" />
+          </div>
+          <div>
+            <h1>Our Shop <i class="fa-solid fa-arrow-right-long"></i></h1>
+          </div>
+        </div>
+      </div>
+      <div id="footnote-blk">
+        <div class="main-container-blk grid-blk">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </div>
+        <img src="./img/logo-white-footer.png" />
+      </div>
+      <div class="f-blk">
+        <ul>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Site Credits</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
+      // Variables
       const toggleMenu = document.getElementById("toggle-menu");
       const backBtnMenu = document.getElementById("back-btn-nav");
       const mobileNavContainer = document.getElementById("mobile-navigation");
+      const backToTopBtn = document.querySelector(".back-to-top-blk");
+
+      // Handlers
       toggleMenu.addEventListener("click", () => {
         mobileNavContainer.classList.add("open-nav");
       });
 
       backBtnMenu.addEventListener("click", () => {
         mobileNavContainer.classList.remove("open-nav");
+      });
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
     </script>
   </body>
