@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>VERMAFARMS | 2022</title>
+  </head>
+  <body>
+    <div id="mobile-navigation" class="close-nav">
+      <div id="mobile-nav-blk">
+        <img src="./img/logo-round-color-green.png" />
+        <img src="./img/logo.svg" />
+        <i id="back-btn-nav" class="fa-solid fa-chevron-right"></i>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <nav>
+      <div id="nav-container-blk" class="main-container-blk">
+        <div>
+          <ul>
+            <li>
+              <a href="#" id="brand-name-blk"><img src="./img/logo.svg" /></a>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Learn</a></li>
+
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="#"><img src="./img/cart.svg" /></a>
+              <span>1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="mobile-nav">
+      <div class="grid-class">
+        <div id="toggle-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <a href="#" id="brand-name-blk"><img src="./img/logo.svg" /></a>
+        </div>
+        <div>
+          <a href="#"><img src="./img/cart.svg" /></a> <span>1</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Block -->
+    <div id="hero-blk">
+      <img class="hero-fern-one" src="./img/palm-left.png" />
+      <img class="hero-plant-one" src="./img/leaf-right.png" />
+      <img class="hero-fern-two" src="./img/palm-right.png" />
+      <div class="main-container-blk">
+        <img src="./img/product-image.png" class="product-hero" />
+        <h1>
+          Pure All Natural<br />
+          CBD Inspired by the <br />
+          Islands of Hawaii
+        </h1>
+        <p>ZERO THC – all natural cannabidoil</p>
+        <a class="btn-class" href="#">Shop Now</a>
+      </div>
+    </div>
+    <div id="hero-wave">
+      <lottie-player
+        src=" https://assets10.lottiefiles.com/packages/lf20_uku8vrur.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+      const toggleMenu = document.getElementById("toggle-menu");
+      const backBtnMenu = document.getElementById("back-btn-nav");
+      const mobileNavContainer = document.getElementById("mobile-navigation");
+      toggleMenu.addEventListener("click", () => {
+        mobileNavContainer.classList.add("open-nav");
+      });
+
+      backBtnMenu.addEventListener("click", () => {
+        mobileNavContainer.classList.remove("open-nav");
+      });
+    </script>
+  </body>
+</html>
