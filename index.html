@@ -133,11 +133,13 @@
       <div class="main-container-blk">
         <div class="headline-blk">
           <img src="./img/round-logo-orange.png" />
+
           <h1>About Our CBD</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing<br />
             elit. Nullam rhoncus auctor arcu, nec mollis tortor.
           </p>
+          <span id="startitup" style="position: absolute"></span>
         </div>
         <div class="grid-blk">
           <div>
@@ -166,8 +168,10 @@
               </p>
             </div>
           </div>
+
           <div class="slide-container-blk">
-            <img src="img/white-bowl.png" />
+            <img class="herb" src="img/herb-plate.png" />
+            <img class="gummy" src="img/gummyplate.png" />
           </div>
           <div>
             <div class="grid-cols">
@@ -198,6 +202,55 @@
         </div>
       </div>
       <a class="cta-btn-about" href="#">MORE ABOUT CBD</a>
+    </div>
+    <lottie-player
+      src=" https://assets10.lottiefiles.com/packages/lf20_uku8vrur.json"
+      background="transparent"
+      speed="1"
+      style="width: 100%"
+      loop
+      autoplay
+    ></lottie-player>
+
+    <!--- Satisfaction block --->
+    <div id="satisfaction-blk">
+      <img class="bg-blk-satisfaction" src="./img/hand-oil-image.png" />
+      <div class="main-container-blk grid-blk">
+        <div class="left-panel-blk">
+          <p>Satisfaction Guaranteed</p>
+          <h1>Love It, Or It's On Us</h1>
+          <ul>
+            <li>
+              <div><img src="./img/hands-icon.png" /></div>
+              <div>
+                <h2>Try Verma Farms Risk Free</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li>
+              <div><img src="./img/squiggles-icon.png" /></div>
+              <div>
+                <h2>No High Whatsoever</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li>
+              <div><img src="./img/lemon-icon.png" /></div>
+              <div>
+                <h2>All Natural Ingredients</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li>
+              <div><img src="./img/legal-icon.png" /></div>
+              <div>
+                <h2>Now Legal In All 50 States</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
@@ -239,24 +292,10 @@
     </footer>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-      // Variables
-      const toggleMenu = document.getElementById("toggle-menu");
-      const backBtnMenu = document.getElementById("back-btn-nav");
-      const mobileNavContainer = document.getElementById("mobile-navigation");
-      const backToTopBtn = document.querySelector(".back-to-top-blk");
-
-      // Handlers
-      toggleMenu.addEventListener("click", () => {
-        mobileNavContainer.classList.add("open-nav");
-      });
-
-      backBtnMenu.addEventListener("click", () => {
-        mobileNavContainer.classList.remove("open-nav");
-      });
-      backToTopBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>
